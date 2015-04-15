@@ -4,6 +4,8 @@ body {
 
 header, main, footer {
   min-width: 855px;
+  font-weight: bold;
+  font-size: 125%;
 }
 
 header .container, main .container, footer .container {
@@ -29,11 +31,14 @@ header nav {
 main {
   background: white;
   overflow: auto;
+  font-weight: bold;
+  font-style: italic;
 }
 
 main .left {
   float: left;
   width: 570px;
+  color: red;
 }
 
 main .right {
