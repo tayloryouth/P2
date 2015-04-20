@@ -40,8 +40,8 @@ var allArmstrongs = function () {
 var allSubstrings1 = function (s) {
 	var result = "";
 	for (var i = 0; i < s.length; ++i) {
-		for(var j = i+1; j < s.length; j++) {
-			s.substring(i, j);
+		for(var j = i+1; j <= s.length; j++) {
+			result = result + s.substring(i, j) + ","
 		}
 	}
 	return result;
@@ -49,15 +49,22 @@ var allSubstrings1 = function (s) {
 
 // P2 req. 4-D
 
-var allSubstrings2 = function (a) {
-	var result = "";
-	for (var i = 0; i < )
-
+var allSubstrings2 = function (s) {
+	var result = [];
+	for (var i = 0; i < s.length; ++i) {
+		for (var j = i + 1; j <= s.length; j++) {
+			var arr = s.substring (i,j);
+			result.push(arr);
+		}
+	}
+	return result;
 }
 
 // P2 req. 4-E
 	
 var maxWord = function (s) {
 	var result = "";
-	for (var i = 0; i < s.length; ++i)
+	for (var i = 0; i < s.length; ++i) {
+		if (s[i] == " ")
+	}
 }
