@@ -63,8 +63,14 @@ var allSubstrings2 = function (s) {
 // P2 req. 4-E
 	
 var maxWord = function (s) {
-	var result = "";
-	for (var i = 0; i < s.length; ++i) {
-		if (s[i] == " ")
-	}
-}
+    var str = s.split(" ");
+    var longest = 0;
+    var result = null;
+    for (var i = 0; i < str.length; i++) {
+        if (longest < str[i].length) {
+            longest = str[i].length;
+            result = str[i];
+        }
+    }
+    return result;
+};
